@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    max-width: 100vw;
+}
+html{
+    scroll-behavior: smooth;
+}
+h2, h3, p{
+	margin:20px 20px;
+    padding:10px 10px;
+    text-align: center;
+}
+.navbar{
+    background-color: brown;
+}
+
+header ul{
+	float: right ;
+	list-style-type:none ;
+	margin-top: 20px;
+	font-size: x-large;
+	padding-right: 20px;
+}
+header ul li{
+	display: inline-block;
+}
+header ul li a{
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	margin: 0 10px;
+	padding: 14px, 16px;
+	transition: 0.6s ease;
+}
+header ul li a:hover{
+	color: black;
+}
+.culture{
+    background-image: url("assets/homepage_image.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+
+}
+img{
+    width: 20px;
+    height:300px;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.card{
+    margin-left:50px;
+}
+.food img{
+    width: 300px;
+    height: 300px;
+}
+.instruments .col{
+    margin-left:150px;
+}
+.qa-box {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.qa-box.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qa-box.active::before,
+.qa-box.active::after {
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    color: #2ecc71;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.qa-box.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.qa-title {
+    margin: 0 35px 0 0;
+}
+
+.qa-text {
+    margin: 30px 0 0;
+    display: none;
+    font-size: 0.9rem;
+}
+
+.qa-box.active .qa-text {
+    display: block;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.qa-box .fa-times {
+    display: none;
+}
+
+.qa-box.active .fa-times {
+    display: block;
+    color: white;
+}
+
+.qa-box.active .fa-chevron-down {
+    display: none;
+}
+
+.qa-box.active .btn {
+    background-color: #9fa4a8;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.attire img{
+    width:300px;
+    height:300px;
+}
+.attire .card{
+    border:none;
+}
+footer{
+    background-color: grey;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width:768px){
+    .culture_content{
+        background-color: #fff;
+        border:1px solid #000;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    }
+}
